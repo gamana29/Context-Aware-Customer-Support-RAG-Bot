@@ -33,7 +33,7 @@ The chatbot answers customer support queries using a company FAQ document and pe
 
 ---
 
-## 🧠 System Architecture
+##  System Architecture
 
 User Query  
 → SQLite (User Profile)  
@@ -147,7 +147,7 @@ The original assignment specified `llama3-8b-8192`. Since this model has been de
 
 ---
 
-## 📌 Notes
+##  Notes
 
 - Run `ingest.py` before starting chatbot  
 - Do not commit `.env`, `venv/`, or cache files  
@@ -155,7 +155,7 @@ The original assignment specified `llama3-8b-8192`. Since this model has been de
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 Built as part of an AI internship assessment focused on Retrieval-Augmented Generation systems, vector databases, and LLM integration.
 
