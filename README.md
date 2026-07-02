@@ -7,6 +7,41 @@ Riva is a Retrieval-Augmented Generation (RAG) chatbot developed using Python, L
 The chatbot answers customer support queries using a company FAQ document and personalizes responses based on user information stored in an SQLite database.
 
 ---
+## Architecture Overview
+```bash
+User Query
+↓
+SQLite (User Profile Retrieval)
+↓
+Query Embedding (HuggingFace)
+↓
+FAISS Vector Search (FAQ Retrieval)
+↓
+Context + User Data Prompt Construction
+↓
+Groq LLM Inference
+↓
+Personalized Response
+```
+---
+
+##  Why This Architecture?
+
+This system is designed in modular layers:
+
+### 1. Data Layer
+- SQLite stores structured user profiles
+- Enables personalization (membership-based responses)
+
+### 2. Retrieval Layer
+- FAQ document is chunked and embedded
+- FAISS performs fast semantic similarity search
+
+### 3. Generation Layer
+- Groq LLM generates final response
+- Prompt includes retrieved context + user information
+
+---
 
 ## Features
 
@@ -130,6 +165,43 @@ http://127.0.0.1:8000/docs
 - What are my membership benefits?
 - Do I get premium customer support?
 
+---
+### Sample Output
+
+```bash 
+Case 1: Valid User
+Input:
+
+User ID: 101  
+Query: What is the refund policy?
+
+Output:
+
+Hi Riya Sharma 👋  
+As a Gold member, you are eligible for a 7-day refund window.  
+You can initiate a refund from your account settings under Billing → Refunds.
+Case 2: Invalid User
+
+Input:
+
+User ID: 999  
+Query: What are my benefits?
+
+Output:
+
+User not found. Please enter a valid user_id.
+Case 3: FAQ Retrieval
+
+Input:
+
+User ID: 102  
+Query: Can I cancel my account?
+
+Output:
+
+Yes, you can cancel your account anytime from settings.  
+Silver members retain access until the end of the billing cycle.
+```
 ---
 
 ## Error Handling
