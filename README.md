@@ -6,6 +6,8 @@ Riva is a Retrieval-Augmented Generation (RAG) chatbot developed using Python, L
 
 The chatbot answers customer support queries using a company FAQ document and personalizes responses based on user information stored in an SQLite database.
 
+---
+
 ## Features
 
 - Retrieval-Augmented Generation (RAG) over FAQ documents  
@@ -15,6 +17,8 @@ The chatbot answers customer support queries using a company FAQ document and pe
 - Terminal-based chatbot interface  
 - FastAPI-based API support  
 - Structured error handling and fallback responses  
+
+---
 
 ## Technologies
 
@@ -26,6 +30,20 @@ The chatbot answers customer support queries using a company FAQ document and pe
 - HuggingFace Sentence Transformers  
 - FastAPI (optional API layer)  
 - Uvicorn (ASGI server)  
+
+---
+
+## 🧠 System Architecture
+
+User Query  
+→ SQLite (User Profile)  
+→ Embedding Model (HuggingFace)  
+→ FAISS Vector Search (FAQ Retrieval)  
+→ Prompt Builder (Context + User Info)  
+→ Groq LLM (Response Generation)  
+→ Final Answer  
+
+---
 
 ## Project Structure
 
@@ -44,6 +62,7 @@ customer-support-rag/
 ├── .env.example
 ├── .gitignore
 ```
+---
 
 ## Installation
 
@@ -57,6 +76,7 @@ cd customer-support-rag
 ```bash
 pip install -r requirements.txt
 ```
+
 ## 🗄️ Setup Instructions
 ### Step 1: Create SQLite Database
 
@@ -69,6 +89,8 @@ python create_db.py
 ```bash
 python ingest.py
 ```
+
+
 
 ## Run chatbot
 
@@ -89,6 +111,7 @@ Open in browser:
 ```bash
 http://127.0.0.1:8000/docs
 ```
+---
 
 ## Sample Users
 
@@ -98,12 +121,16 @@ http://127.0.0.1:8000/docs
 |102|Aman Verma|Silver|
 |103|Neha Iyer|Platinum|
 
+---
+
 ## Sample Questions
 
 - What is the refund policy?
 - Can I cancel my account?
 - What are my membership benefits?
 - Do I get premium customer support?
+
+---
 
 ## Error Handling
 
@@ -112,6 +139,28 @@ http://127.0.0.1:8000/docs
 - Missing Context
 - API Errors
 
+---
+
 ## Model
 
 The original assignment specified `llama3-8b-8192`. Since this model has been deprecated by Groq, the implementation uses a currently supported Groq model.
+
+---
+
+## 📌 Notes
+
+- Run `ingest.py` before starting chatbot  
+- Do not commit `.env`, `venv/`, or cache files  
+- FAISS index must exist before querying  
+
+---
+
+## 👨‍💻 Author
+
+Built as part of an AI internship assessment focused on Retrieval-Augmented Generation systems, vector databases, and LLM integration.
+
+---
+
+## 📜 License
+
+For educational and evaluation purposes only.
