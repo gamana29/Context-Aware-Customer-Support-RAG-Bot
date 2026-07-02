@@ -167,9 +167,9 @@ http://127.0.0.1:8000/docs
 
 ---
 ### Sample Output
-
+## Case 1: Valid User
 ```bash 
-Case 1: Valid User
+
 Input:
 
 User ID: 101  
@@ -181,14 +181,14 @@ Hi Riya Sharma 👋
 As a Gold member, you are eligible for a 7-day refund window.  
 You can initiate a refund from your account settings under Billing → Refunds.
 ```
-<img width="1571" height="802" alt="image" src="https://github.com/user-attachments/assets/294b77f1-18a4-452e-a2f1-1879177192a5" />
-<img width="1538" height="683" alt="image" src="https://github.com/user-attachments/assets/21f53ae7-8fb9-44fd-953a-0d9c257e5de9" />
+<img width="1250" height="172" alt="image" src="https://github.com/user-attachments/assets/80b7c788-496a-485f-8186-6082f9ee9e95" />
 
-Case 2: Invalid User
+<img width="1293" height="401" alt="image" src="https://github.com/user-attachments/assets/74467a62-1af1-4e45-a145-c2427c43294a" />
+
+
+## Case 2: Invalid User
 ```bash 
-<img width="1571" height="802" alt="image" src="https://github.com/user-attachments/assets/294b77f1-18a4-452e-a2f1-1879177192a5" />
-<img width="1538" height="683" alt="image" src="https://github.com/user-attachments/assets/21f53ae7-8fb9-44fd-953a-0d9c257e5de9" />
-```bash
+
 Input:
 
 User ID: 999  
@@ -198,7 +198,12 @@ Output:
 
 User not found. Please enter a valid user_id.
 ```
-Case 3: FAQ Retrieval
+<img width="1517" height="167" alt="image" src="https://github.com/user-attachments/assets/3bf94569-8b60-4a07-94e0-fc7db9412375" />
+
+<img width="1547" height="371" alt="image" src="https://github.com/user-attachments/assets/70602889-e14e-4c1f-a6d3-5ec25ec6aa38" />
+
+
+## Case 3: FAQ Retrieval
 
 ```bash
 
@@ -212,9 +217,15 @@ Output:
 Yes, you can cancel your account anytime from settings.  
 Silver members retain access until the end of the billing cycle.
 ```
+<img width="1523" height="188" alt="image" src="https://github.com/user-attachments/assets/aca9e1f1-02a3-4525-bb23-548bf6265192" />
+
+<img width="1511" height="437" alt="image" src="https://github.com/user-attachments/assets/e7af1ce4-0598-4b89-965a-30a47f15aa42" />
+
+
+---
+<img width="1917" height="990" alt="image" src="https://github.com/user-attachments/assets/5b7f28e8-e964-4568-a09f-bfde2a5df0c5" />
 ---
 
-<img width="1606" height="766" alt="image" src="https://github.com/user-attachments/assets/eb1aa9c6-272c-4984-aed1-ba62c32e749d" />
 
 
 
