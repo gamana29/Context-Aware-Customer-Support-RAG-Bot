@@ -180,8 +180,15 @@ Output:
 Hi Riya Sharma 👋  
 As a Gold member, you are eligible for a 7-day refund window.  
 You can initiate a refund from your account settings under Billing → Refunds.
-Case 2: Invalid User
+```
+<img width="1571" height="802" alt="image" src="https://github.com/user-attachments/assets/294b77f1-18a4-452e-a2f1-1879177192a5" />
+<img width="1538" height="683" alt="image" src="https://github.com/user-attachments/assets/21f53ae7-8fb9-44fd-953a-0d9c257e5de9" />
 
+Case 2: Invalid User
+```bash 
+<img width="1571" height="802" alt="image" src="https://github.com/user-attachments/assets/294b77f1-18a4-452e-a2f1-1879177192a5" />
+<img width="1538" height="683" alt="image" src="https://github.com/user-attachments/assets/21f53ae7-8fb9-44fd-953a-0d9c257e5de9" />
+```bash
 Input:
 
 User ID: 999  
@@ -190,7 +197,10 @@ Query: What are my benefits?
 Output:
 
 User not found. Please enter a valid user_id.
+```
 Case 3: FAQ Retrieval
+
+```bash
 
 Input:
 
@@ -203,6 +213,12 @@ Yes, you can cancel your account anytime from settings.
 Silver members retain access until the end of the billing cycle.
 ```
 ---
+
+<img width="1606" height="766" alt="image" src="https://github.com/user-attachments/assets/eb1aa9c6-272c-4984-aed1-ba62c32e749d" />
+
+
+
+
 
 ## Error Handling
 
