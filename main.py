@@ -43,7 +43,7 @@ class ChatRequest(BaseModel):
 @app.get("/")
 def home():
     return {
-        "message": "Welcome to ChioMart AI Customer Support Bot"
+        "message": "Welcome to Riva AI Customer Support Bot"
     }
 
 
